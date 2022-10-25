@@ -3,7 +3,7 @@
     "auther": {
         "name": "ux"
     },
-    "version": "1.0.0",
+    "version": "0.0.0",
     "description": "自动路由映射表分析组件",
     "repository": "https://github.com/Hahahahx/roux",
     "main": "lib",
@@ -51,5 +51,9 @@
     },
     "dependencies": {
         "react-router-dom": "^6.4.2"
+    },
+    "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
     }
 }

@@ -1,7 +1,7 @@
 {
   "name": "roux",
   "version": "0.0.0",
-  "private": true,
+  "private": false,
   "workspaces": [
     "apps/*",
     "packages/*"
@@ -12,7 +12,7 @@
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
-  "devDependencies": { 
+  "devDependencies": {
     "prettier": "latest",
     "turbo": "latest"
   },
