@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2015",
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    // "sourceMap": true,
+    "declaration": true,
+    "declarationDir": "lib",
+    "typeRoots": ["./types"],
+    "outDir": "lib",
+    "baseUrl": "src",
+    "paths": {
+      "*": ["node_modules/*", "types/*"]
+    }
+  },
+  "include": ["**/*"],
+  "exclude": ["node_modules"]
+}
