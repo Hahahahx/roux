@@ -5,7 +5,7 @@
   },
   "version": "1.0.0",
   "description": "自动路由",
-  "repository": "https://github.com/Hahahahx/ux-autoroute-plugin",
+  "repository": "https://github.com/Hahahahx/roux",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "keywords": [
