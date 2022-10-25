@@ -1,9 +1,9 @@
 {
   "name": "@roux/plugin",
   "auther": {
-    "name": "ux"
+    "name": "uxxx"
   },
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "自动路由",
   "repository": "https://github.com/Hahahahx/roux",
   "main": "lib",
@@ -19,15 +19,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile": "tsc"
   },
-  "dependencies": {
-    "@loadable/component": "5.13.2",
-    "@types/loadable__component": "5.13.1",
-    "nodemon": "^2.0.4",
-    "ts-node": "^9.0.0",
-    "typescript": "^4.0.3"
-  },
   "license": "ISC",
   "devDependencies": {
+    "nodemon": "^2.0.4",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.3",
     "@types/node": "^16.18.0"
   }
 }
