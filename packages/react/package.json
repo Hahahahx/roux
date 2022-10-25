@@ -5,7 +5,7 @@
     },
     "version": "1.0.0",
     "description": "自动路由映射表分析组件",
-    "repository": "https://github.com/Hahahahx/roux.git",
+    "repository": "https://github.com/Hahahahx/roux",
     "main": "lib",
     "keywords": [
         "react",

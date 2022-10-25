@@ -6,6 +6,7 @@
     "version": "0.0.0",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "pnpm start:vite",
         "start:webpack": "webpack serve --open --mode development --config ./config/webpack.config.js",
         "start:vite": "vite --config ./config/vite.config.js  ",
         "build": "webpack --mode production --config ./config/webpack.config.js",
