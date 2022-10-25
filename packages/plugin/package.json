@@ -1,7 +1,7 @@
 {
-  "name": "@roux/plugin",
+  "name": "@rouxx/plugin",
   "auther": {
-    "name": "uxxx"
+    "name": "ux"
   },
   "version": "0.0.1",
   "description": "自动路由",
