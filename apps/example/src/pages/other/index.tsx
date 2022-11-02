@@ -1,16 +1,15 @@
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { RouterView, useRouter } from "@roux/react";
 
-const Index = () => {
+const Main = () => {
     const { child } = useRouter();
 
-    const location = useLocation()
-    console.log(location)
+    console.log(child);
 
     return (
         <>
             <ul>
-                <li> index</li>
+                <li> main</li>
                 {child?.map((item: any, index: any) => (
                     <li key={index}>
                         <NavLink to={item.path}>{item?.path}</NavLink>
@@ -18,16 +17,12 @@ const Index = () => {
                 ))}
             </ul>
             <div>
+                {/* <Suspense> */}
                 <RouterView />
+                {/* </Suspense> */}
             </div>
         </>
     );
 };
 
-export default Index;
-
-export const handles = {
-    add: () => {
-        console.log("sad");
-    },
-};
+export default Main;

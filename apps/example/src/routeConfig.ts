@@ -9,6 +9,8 @@ import PageLogin from './pages/login!';
 import * as PageLoginHandles from './pages/login!';
 import PageMain from './pages/main';
 import * as PageMainHandles from './pages/main';
+import PageOther from './pages/other';
+import * as PageOtherHandles from './pages/other';
 import PageTest from './pages/test';
 import * as PageTestHandles from './pages/test';
 import PageMainTomato from './pages/main/tomato';
@@ -21,6 +23,8 @@ import PageMainTomatoNameId from './pages/main/tomato/[name]/[id]';
 import * as PageMainTomatoNameIdHandles from './pages/main/tomato/[name]/[id]';
 import PageMainPotatoId from './pages/main/~potato/[id]';
 import * as PageMainPotatoIdHandles from './pages/main/~potato/[id]';
+import PageOtherFsd from './pages/other/fsd';
+import * as PageOtherFsdHandles from './pages/other/fsd';
 
 
 
@@ -142,6 +146,33 @@ const router=[
 								child: null
 							}
 						]
+					}
+				]
+			},
+			{
+				element: PageOther,
+				handles: PageOtherHandles.handles,
+				relative: './pages/other',
+				absolute: 'G:/JS/self/roux/apps/example/src/pages/other',
+				path: '/other',
+				pathName: 'other',
+				index: false,
+				lazy: false,
+				param: false,
+				recursion: true,
+				child: [
+					{
+						element: PageOtherFsd,
+						handles: PageOtherFsdHandles.handles,
+						relative: './pages/other/fsd',
+						absolute: 'G:/JS/self/roux/apps/example/src/pages/other/fsd',
+						path: '/other/fsd',
+						pathName: 'fsd',
+						index: false,
+						lazy: false,
+						param: false,
+						recursion: true,
+						child: null
 					}
 				]
 			},

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { createRoot } from "react-dom/client";
-import { Routers } from "@roux/react";
+import { Routers } from "@roux/react/lib";
 import routeConfig from "./routeConfig";
 
 const App = () => {
@@ -16,13 +16,13 @@ const App = () => {
                 </button>
             </div>
             <Routers
-                type="hash"
+                type="history"
                 routers={routeConfig}
                 mount={({ path, navigate }) => {
-                    console.log(userAuth);
-                    if (routeAuth.includes(path) && !userAuth) {
-                        navigate("/login");
-                    }
+                    // console.log(userAuth);
+                    // if (routeAuth.includes(path) && !userAuth) {
+                    //     navigate("/login");
+                    // }
                 }}
                 errorElement={<>404</>}
             />
@@ -32,4 +32,16 @@ const App = () => {
 
 const container = document.getElementById("root");
 const root = createRoot(container!); // createRoot(container!) if you use TypeScript
-root.render(<App />);
+root.render(
+    <Routers
+        type="history"
+        routers={routeConfig}
+        mount={({ path, navigate }) => {
+            // console.log(userAuth);
+            // if (routeAuth.includes(path) && !userAuth) {
+            //     navigate("/login");
+            // }
+        }}
+        errorElement={<>404</>}
+    />
+);
