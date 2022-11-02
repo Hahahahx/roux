@@ -3,7 +3,7 @@
   "auther": {
     "name": "ux"
   },
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "自动路由",
   "repository": "https://github.com/Hahahahx/roux",
   "main": "lib",

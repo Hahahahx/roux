@@ -73,11 +73,10 @@ func verifyBase(exg string) func(name string) (string, bool) {
 	return func(name string) (string, bool) {
 		r := regexp.MustCompile(exg)
 		res := r.FindStringSubmatch(name)
-		if len(res) > 0 {
+		if len(res) > 0 && res[1] != "" {
 			return res[1], true
-		} else {
-			return name, false
 		}
+		return name, false
 	}
 }
 
